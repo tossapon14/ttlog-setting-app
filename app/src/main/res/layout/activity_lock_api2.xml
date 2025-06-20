@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lock.LockApiActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Lock API"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border_radius"
+            app:backgroundTint="#009B44"
+            android:clickable="true"
+            android:text="Unlock"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_reset_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset_key"
+            android:clickable="true"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_reset_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border_radius"
+            app:backgroundTint="#EDA60D"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:text="Reset lock"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_add_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border_radius"
+            app:backgroundTint="#016CBC"
+            android:clickable="true"
+            android:text="Add card"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_config_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="config_feature"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_passage_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="passageModeEnter"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lockTimeAbout"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_log"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_battery"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_lock_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lock_system_info"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_lock_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_lock_status"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_set_auto_lock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set_auto_locking_time"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/ic_setting_more" android:duration="200" />
+    <item android:drawable="@drawable/baseline_lock_reset_24" android:duration="200" />
+    <item android:drawable="@drawable/baseline_arrow_drop_down_24" android:duration="200" />
+</animation-list>

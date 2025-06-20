@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".lock.FormInitLockActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="Lock information"
+            android:textAlignment="center"
+            android:textColor="#006421"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="17dp"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="#0EA7FF"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay_lock1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="385dp"
+            android:layout_marginEnd="-3dp"
+            android:gravity="center_horizontal"
+            android:hint="LockAlias">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tf_lock_alias"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/lock_submit"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_lock1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/button_submit"
+            android:gravity="center_horizontal"
+            android:text="Submit"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+        <Spinner
+            android:id="@+id/spinner_building"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/border_color"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
+            android:text="Building"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_building"
+            android:layout_alignEnd="@+id/spinner_building"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/baseline_arrow_drop_down_24" />
+
+        <Spinner
+            android:id="@+id/spinner_floor"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="157dp"
+            android:background="@drawable/border_color"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_floor"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="-86dp"
+            android:text="Floor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_floor"
+            android:layout_alignEnd="@+id/spinner_floor"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/baseline_arrow_drop_down_24" />
+
+        <Spinner
+            android:id="@+id/spinner_room"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="257dp"
+            android:background="@drawable/border_color"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_room"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="-86dp"
+            android:text="Room"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/spinner_room"
+            android:layout_alignEnd="@+id/spinner_room"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/baseline_arrow_drop_down_24" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="360dp"
+            android:text="Look alias"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/error1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotel_name"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="6dp"
+            android:text="** building require"
+            android:textColor="#FF0000"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/error2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:text="** floor require"
+            android:textColor="#FF0000"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/error3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="7dp"
+            android:text="** room require"
+            android:textColor="#FF0000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>

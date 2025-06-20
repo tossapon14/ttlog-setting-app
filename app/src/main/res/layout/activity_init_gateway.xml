@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".gateway.InitGatewayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configure Gateway"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_border_radius"
+            android:backgroundTint="#FFECE2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="please select 2.4 wifi"
+            android:textAlignment="center"
+            android:textColor="#FF8C00"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wifi_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/background_border_radius"
+            android:backgroundTint="#fff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="WiFi Name"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/textView"
+                android:background="#fff"
+                android:drawableRight="@drawable/baseline_arrow_drop_down_24"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text=""
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <View style="@style/divider_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/background_border_radius"
+            android:backgroundTint="#fff"
+            android:layout_marginHorizontal="16dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_wifi_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="WiFi Password"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/wifi_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_wifi_pwd"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center_vertical|end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/background_border_radius"
+            android:backgroundTint="#fff"
+            android:layout_marginHorizontal="16dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_gateway_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Gateway Name"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/gateway_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_gateway_name"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center_vertical|end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <View style="@style/divider_line" />
+
+        <Button
+            android:id="@+id/btn_init_gateway"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_border_radius"
+            app:backgroundTint="#02BC10"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

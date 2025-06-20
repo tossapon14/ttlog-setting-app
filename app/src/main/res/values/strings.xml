@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ttlogExample</string>
+    <string name="lock_about" />
+    <string name="passcode_about" />
+    <string name="title_activity_enable_disable_som_lock_function">
+        EnableDisableSomLockFunctionActivity
+    </string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="lock_time_is" />
+    <string name="initLock" />
+    <string name="words_version_info">words_version_info</string>
+    <string name="words_status">words status</string>
+    <!-- ICcard -->
+    <string name="add_permanent_ic_card">Add permanent IC card</string>
+    <string name="add_period_id_card">Add time limited IC card</string>
+    <string name="modify_period">modify validity period</string>
+    <string name="delete_ic_card">delete IC card</string>
+    <string name="get_all_ic_card">get all valid IC cards in lock</string>
+    <string name="clear_all_ic_card">clear all IC card</string>
+    <string name="my_card_list">show all card</string>
+</resources>

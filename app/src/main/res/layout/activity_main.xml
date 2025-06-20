@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#0029A0"
+            android:text="Main Activity"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register"
+            android:textAllCaps="false"
+            android:text="register"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_auth"
+            android:textAllCaps="false"
+            android:text="authen"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_lock"
+            android:textAllCaps="false"
+            android:text="lock_about"/>
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/btn_passcode"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:text="passcode_about"/>-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/btn_fingerprint"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:text="fingerprint_about"/>-->
+        <Button
+            android:id="@+id/btn_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="card about"
+            android:textAllCaps="false"
+            android:visibility="invisible" />
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/btn_firmware"-->
+<!--            android:text="upgrade_about"/>-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/btn_wireless_keyboard"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:text="wirelesskeyboard"/>-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
